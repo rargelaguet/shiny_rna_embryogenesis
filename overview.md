@@ -14,7 +14,7 @@
 - **Unpublished**: XXX cells profiled with scRNA-seq ([Petropolous2016](https://www.cell.com/fulltext/S0092-8674(16)30280-X)) and XXX cells profiled with scMT-seq
 
 ### Code availability
-Github repository with the code for the shiny app: 
+Github repository with the code for the shiny app: https://github.com/rargelaguet/shiny_rna_embryogenesis
 <!-- ### Data availability -->
 <!-- Raw data is available at [GEO: GSE204908](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE204908).   -->
 <!-- Links to the parsed data objects is available in the github repository above. -->

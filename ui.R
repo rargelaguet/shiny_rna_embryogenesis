@@ -41,7 +41,7 @@ ui <- shinyUI(fluidPage(
     tabPanel(
       title = "Gene expression (mouse)", id = "gene_expr_mouse",
       sidebarPanel(width=3,
-                   selectInput("gene_expr_mouse_dataset", label = "Data set",  choices = list("Wang2021 (preimplantation)"="Wang2021", "Argelaguet2019 (postimplantation)"="Argelaguet2019"), selected = "Wang2021"),
+                   selectInput("gene_expr_mouse_dataset", label = "Data set",  choices = list("Wang2021 (preimplantation)"="Wang2021", "Argelaguet2019 (postimplantation)"="Argelaguet2019", "PijuanSala2019 (postimplantation)"="PijuanSala2019"), selected = "Wang2021"),
                    selectizeInput("gene_expr_mouse_gene", label = "Select gene", choices=NULL, selected="T"),
                    selectInput("gene_expr_mouse_x_axis", label = "x-axis", choices = c("Celltype"="celltype", "Stage"="stage"), selected = "Celltype"),
                    conditionalPanel(
@@ -52,7 +52,7 @@ ui <- shinyUI(fluidPage(
                    
       ),
       mainPanel(
-        plotOutput("plot_gene_expr_mouse",  width = "900px", height = "500px")
+        plotOutput("plot_gene_expr_mouse",  width = "1000px", height = "600px")
       )
     ),
     
@@ -92,6 +92,7 @@ ui <- shinyUI(fluidPage(
     #   )
     # ),
     
-    tags$style(HTML(".navbar-header { width:100% } .navbar-brand { width: 100%; text-align: left; font-size: 150%; }"))
+    # tags$style(HTML(".navbar-header { width:100% } .navbar-brand { width: 100%; text-align: left; font-size: 150%; }"))
+    tags$style(HTML(".navbar-header { width:100% } .navbar-brand { width: 100%; font-size: 27px }")) # title text
   )
 ))

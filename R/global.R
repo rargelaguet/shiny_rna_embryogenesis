@@ -12,36 +12,20 @@ if (Sys.info()[['nodename']]=="BI2404M") {
 ## libraries ##
 ###############
 
+# I/O
 library(R.utils)
 library(HDF5Array)
+
+# Data manipulation
 library(data.table)
 library(purrr)
-library(DT)
 
 # shiny
 library(shiny)
-library(shinyFiles)
 library(shinythemes)
-library(ggiraph)
 
-# general viz
-library(GGally)
-library(cowplot)
-library(ggrepel)
+# viz
 library(ggplot2)
-require(patchwork)
-require(ggpubr) # to do: remove this dependency?
-
-# graph viz
-# require(visNetwork)
-# library(sna)
-library(network)
-library(ggraph)
-library(igraph)
-library(tidygraph)
-
-library(Cairo)
-options(shiny.usecairo=T)
 
 ###########################################
 ## Global variables for human data sets  ##
@@ -286,10 +270,6 @@ names(mouse_stage_colors[["Wang2021"]]) <- mouse_stages[["Wang2021"]]
 ## Functions ##
 ###############
 
-minmax.normalisation <- function(x) {
-  return((x-min(x,na.rm=T)) /(max(x,na.rm=T)-min(x,na.rm=T)))
-}
-
 ggplot_theme_NoAxes <- function() {
   theme(
     axis.title = element_blank(),
@@ -298,7 +278,6 @@ ggplot_theme_NoAxes <- function() {
     axis.ticks = element_blank()
   )
 }
-
 
 matrix.please<-function(x) {
   m<-as.matrix(x[,-1])

@@ -1,12 +1,3 @@
-# for testing
-# shiny::loadSupport()
-
-#############################
-## Define global variables ##
-#############################
-
-# human_genes <- fread(paste0(data_folder,"/human/Unpublished/rna_expression/genes.txt"), header=F)[[1]]
-# mouse_genes <- fread(paste0(data_folder,"/mouse/Argelaguet2019/rna_expression/genes.txt"), header=F)[[1]]
 
 ##############
 ## Shiny UI ##

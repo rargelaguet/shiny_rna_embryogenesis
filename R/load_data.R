@@ -8,6 +8,7 @@
 # } else if (Sys.info()[['nodename']]=="rargelaguet.local") {
 #   data_folder <- "/Users/rargelaguet/shiny_dnmt/data"
 # }
+data_folder <- file.path(getwd(),"data")
 
 ###############################################
 ## Load global variables for human data sets ##
@@ -17,7 +18,7 @@
 # human_cells <- fread(paste0(data_folder,"/human/rna_expression/rna_expr_cells.txt"), header=F)[[1]]
 
 human_genes_list <- list()
-human_genes_list[["Unpublished"]] <- fread(paste0(data_folder,"/human/Unpublished/rna_expression/genes.txt"), header=F)[[1]]
+human_genes_list[["Unpublished"]] <- fread(file.path(data_folder,"human/Unpublished/rna_expression/genes.txt"), header=F)[[1]]
 human_genes_list[["Xue2013"]] <- fread(paste0(data_folder,"/human/Xue2013/rna_expression/genes.txt"), header=F)[[1]]
 human_genes <- Reduce("intersect",human_genes_list)
 

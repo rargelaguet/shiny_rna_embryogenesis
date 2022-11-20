@@ -2,11 +2,11 @@
 ## Define computer (for testing purposes) ##
 ############################################
 
-if (Sys.info()[['nodename']]=="BI2404M") {
-  data_folder <- "/Users/argelagr/shiny_embryo/data"
-} else  {
-  stop("Computer not recognised")
-}
+# if (Sys.info()[['nodename']]=="BI2404M") {
+#   data_folder <- "/Users/argelagr/shiny_embryo/data"
+# } else  {
+#   stop("Computer not recognised")
+# }
 
 ###############
 ## libraries ##

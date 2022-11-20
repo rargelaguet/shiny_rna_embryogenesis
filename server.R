@@ -1,8 +1,4 @@
 
-# for testing
-# shiny::loadSupport()
-# source("load_data.R")
-
 ##################
 ## Shiny server ##
 ##################
